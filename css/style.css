@@ -468,6 +468,14 @@ dl dd {
         margin:auto;
         text-align:center;
     }
+
+    .about {
+        grid-template-columns: auto 50% 50% auto;
+        grid-template-rows: min-content min-content;
+        grid-template-areas: 
+        ".  who camera  ."
+        ".  philosofy   philosofy   .";
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -487,6 +495,15 @@ dl dd {
         flex: 100%;
         max-width: 100%;
         padding: 0 4px;
+    }
+
+    .about {
+        grid-template-columns: auto 100% auto;
+        grid-template-rows: min-content min-content min-content;
+        grid-template-areas: 
+        ".  who ."
+        ".  camera  ."
+        ".  philosofy   .";
     }
 }
 
